@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie.</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--hint-yellow);
+    }
+
+    :root {
+        --lead: #212121;
+        --gold-finger: #f2bd12;
+        --eye-ball: #fffdf7;
+        --hint-yellow: #fcf1cc;
+        --pure-white: #fff;
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    .sec-container {
+        height: 20rem;
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100rem;
+        border: 3px solid var(--gold-finger);
+        color: var(--lead);
+    }
+
+    .head-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .head-1 h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--gold-finger);
+    }
+
+    .head-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .head-2 p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        visibility: hidden;
+    }
+
+    .btn button {
+        height: 2rem;
+        width: 8rem;
+        border-radius: 100rem;
+        border: none;
+        background-color: var(--gold-finger);
+        color: var(--pure-white);
+        transition: .5s ease-in-out;
+    }
+
+    .btn button:hover {
+        background-color: var(--lead);
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="sec-container">
+            <div class="container">
+                <div class="head-1">
+                    <h1 id="head"></h1>
+                </div>
+                <div class="head-2">
+                    <p id="para"></p>
+                </div>
+                <div class="btn">
+                    <a href="login.html">
+                        <button>Started</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#head', {
+            strings: ['Foodie.'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1500,
+            showCursor: false,
+            onComplete: (self) => {
+                new Typed('#para', {
+                    strings: ['Enjoy Your Delicious Food'],
+                    typeSpeed: 75,
+                    showCursor: false,
+                    onComplete: (self) => {
+                        setTimeout(() => {
+                            document.querySelector('.btn').style.visibility = 'visible';
+                        }, 1000); // 2 second ka wait
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

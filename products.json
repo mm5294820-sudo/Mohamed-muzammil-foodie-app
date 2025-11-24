@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Double Beef Burger",
+        "price": "$9.67",
+        "image": "pics/burger.png"
+    },
+    {
+        "id": 2,
+        "name": "Veggie Pizza",
+        "price": "$10.99",
+        "image": "pics/pizza.png"
+    },
+    {
+        "id": 3,
+        "name": "Fried Chicken",
+        "price": "$13.45",
+        "image": "pics/fried-chicken.png"
+    },
+    {
+        "id": 4,
+        "name": "Chicken Roll",
+        "price": "$7.50",
+        "image": "pics/chicken-roll.png"
+    },
+    {
+        "id": 5,
+        "name": "Sub Sandwish",
+        "price": "$6.99",
+        "image": "pics/sandwich.png"
+    },
+    {
+        "id": 6,
+        "name": "Chicken Lasagna",
+        "price": "$16.45",
+        "image": "pics/lasagna.png"
+    },
+    {
+        "id": 7,
+        "name": "Itallian Spaghetti",
+        "price": "$7.65",
+        "image": "pics/spaghetti.png"
+    },
+    {
+        "id": 8,
+        "name": "Spring Roll",
+        "price": "$9.31",
+        "image": "pics/spring-roll.png"
+    },
+    {
+        "id": 9,
+        "name": "Chicken Biryani",
+        "price": "$10.38",
+        "image": "pics/biryani-removebg-preview.png"
+    },
+    {
+        "id": 10,
+        "name": "Chicken Karahi",
+        "price": "$11.70",
+        "image": "pics/Boneless-Chicken-karahi-5-1.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Fish Fried",
+        "price": "$18.22",
+        "image": "pics/download.png"
+    }
+]
